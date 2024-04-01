@@ -28,12 +28,12 @@ warden_ui = "ui/warden_view.ui"
 
 camera = "1"
 
-cn = sq.connect(username="admin",
-                password="SIH",
-                host="localhost",
-                database='sih_main')
-# cn = sq.connect(username="root", password="SIH",
-#                 host="localhost", database='sih')
+# cn = sq.connect(username="admin",
+#                 password="SIH",
+#                 host="localhost",
+#                 database='sih_main')
+cn = sq.connect(username="root", password="SIH",
+                host="localhost", database='sih')
 if cn.is_connected() == False:
     print("not connected")
 else:
